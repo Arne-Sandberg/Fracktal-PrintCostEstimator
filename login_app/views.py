@@ -108,7 +108,7 @@ def contact(request):				# takes stl file and form data from user passes through
 			body_all = "Your Email Address: " + your_email + "\nSubject: " + subject + "\n\nBody: " + body + "\n\nQuality: " + quality + "\nMaterial: " + material + "\nColor: " + color + "\nVolume: " + stl_data[0] + " mm^3" + "\nPrint time estimate(in hrs): " + str(stl_data[1]) + "\nQuantity: " + str(quantity) + "\nEstimated print cost(INR): " + str(int(cost)) + " + INR 250 setup fee "
 			body_short = "Body: " + body + "\n\nQuality: " + quality + "\nMaterial: " + material + "\nColor: " + color + "\nVolume: " + stl_data[0] + " mm^3" + "\nPrint time estimate(in hrs): " + str(stl_data[1]) + "\nEstimated cost(INR): " + str(int(cost))
 			"""try:
-				email = EmailMessage(subject, body_short, your_email, ['ta.rohan550@gmail.com'])
+				email = EmailMessage(subject, body_short, your_email, ['example@email.com'])
 				#email.attach(attachment.name, attachment.read(), attachment.content_type)
 				email.send()
 
