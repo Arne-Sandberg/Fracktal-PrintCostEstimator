@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Fracktal | Login</title>
+{% endblock %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<meta http-equiv="refresh" content="0; url=http://localhost:8000/login_app/home/" />
+{% else %}
+<div class="container">
+<h1>Log in to continue...</h1>
+    <h2> </h2>
+<form method="post">
+    {% csrf_token %}
+    <p>{{ form.as_p }}</p>
+    <h1> </h1>
+    <button class="btn btn-primary" type="submit">Log In</button>
+</form>
+    <h5>Don't have an account yet?</h5>
+    <a href="/login_app/register" style="color: forestgreen">
+        <button class="btn btn-success"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a>
+</div>
+{% endif %}
+{% endblock %}

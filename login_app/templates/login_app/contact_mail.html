@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Fracktal | Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if user.is_authenticated %}
+<h2> Send file for evaluation: </h2>
+ <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+     <h1> </h1>
+    <table>{{ contact_form }}</table>
+    <button class="btn btn-warning" type="submit">Evaluate</button>
+</form>
+    {% else %}
+    <h2>Please Log in, you will then be redirected to the app.</h2>
+    <a href="/">Click here to login</a>
+    {% endif %}
+</div>
+{% endblock %}
