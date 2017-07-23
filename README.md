@@ -16,5 +16,7 @@ This is a small web application which takes an STL file and returns the volume, 
   python manage.py createsuperuser
   ```
   Refer Django documentation (https://docs.djangoproject.com/en/1.10/) on how to deploy it on a production server.
+* The main functions exist inside login_app/views.py. Wherever 'path/to/Fracktal-PrintCostEstimator' is written needs to be changed to the   absolute path of the folder.
+* All the front-end can be edited in login_app/templates/ .
 ### Acknowledgements
 - https://github.com/iashwinprasada/CuraEstimator ( for the gcode analysis )
