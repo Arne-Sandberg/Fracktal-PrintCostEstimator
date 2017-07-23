@@ -87,11 +87,11 @@ def contact(request):				# takes stl file and form data from user passes through
 			if quality == 'Best':
 				# Change the path after cd the absolute path for the Cura folder wherever it is
 				# ( ...\Fracktal-PrintCostEstimator\Cura if downloaded from Github).
-				run_cmd('cd C:\\Users\Rohan\Documents\codes\wapps\print_cost_estimator\Cura && CuraEngine -s layerThickness=100 -s infillSpeed=60 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
+				run_cmd('cd path\to\Fracktal-PrintCostEstimator\Cura && CuraEngine -s layerThickness=100 -s infillSpeed=60 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
 			elif quality == 'High':
-				run_cmd('cd C:\\Users\Rohan\Documents\codes\wapps\print_cost_estimator\Cura && CuraEngine -s layerThickness=200 -s infillSpeed=80 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
+				run_cmd('cd path\to\Fracktal-PrintCostEstimator\Cura && CuraEngine -s layerThickness=200 -s infillSpeed=80 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
 			elif quality == 'Normal':
-				run_cmd('cd C:\\Users\Rohan\Documents\codes\wapps\print_cost_estimator\Cura && CuraEngine -s layerThickness=300 -s infillSpeed=80 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
+				run_cmd('cd path\to\Fracktal-PrintCostEstimator\Cura && CuraEngine -s layerThickness=300 -s infillSpeed=80 -o ../temp_files/user_upload.gcode ../temp_files/user_upload.stl && cd ../login_app', shell=True)
 			material = form.cleaned_data['material']
 			color = form.cleaned_data['color']
 			stl_data = process_stl()
