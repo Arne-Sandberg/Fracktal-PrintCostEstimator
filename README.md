@@ -20,3 +20,4 @@ This is a small web application which takes an STL file and returns the volume, 
 * All the front-end can be edited in login_app/templates/ .
 ### Acknowledgements
 - https://github.com/iashwinprasada/CuraEstimator ( for the gcode analysis )
+- http://3dpartprice.com/3dpartpricelib/api-caller.php ( for the functional Cura Engine )
