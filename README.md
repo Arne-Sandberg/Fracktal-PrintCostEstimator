@@ -17,7 +17,7 @@ A small web application which takes an STL file and returns the volume, estimate
   ```
   Refer Django documentation (https://docs.djangoproject.com/en/1.10/) on how to deploy it on a production server.
 * The main functions exist inside login_app/views.py. Wherever 'path/to/Fracktal-PrintCostEstimator' is written needs to be changed to the   absolute path of the folder.
-* All the front-end can be edited in login_app/templates/ .
+* All the front-end can be edited in login_app/templates/ for HTML and login_app/static/login_app for CSS.
 ### Acknowledgements
 - https://github.com/iashwinprasada/CuraEstimator ( for the gcode analysis )
 - http://3dpartprice.com/3dpartpricelib/api-caller.php ( for the functional Cura Engine )
