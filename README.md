@@ -1,6 +1,6 @@
 # Fracktal-PrintCostEstimator
 
-This is a small web application which takes an STL file and returns the volume, estimated time for printing and cost of print.
+A small web application which takes an STL file and returns the volume, estimated time for printing and cost of print.
 ### Requirements
 - Python 3
 - Django
