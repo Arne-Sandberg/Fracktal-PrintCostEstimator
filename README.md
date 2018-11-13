@@ -5,7 +5,7 @@ A small web application which takes an STL file and returns the volume, estimate
 - Python 3
 - Django
 - numpy + stl python libraries
-- Cura Engine ( to use the exact version I used, click here: http://3dpartprice.com/3dpartpricelib/3dpartpricelib-0.1.4.zip. Extract the archive and copy the Cura folder into the Fracktal-PrintCostEstimator folder )
+- Cura Engine ( to use the exact version I used, click [here](http://3dpartprice.com/3dpartpricelib/3dpartpricelib-0.1.4.zip). Extract the archive and copy the Cura folder into the Fracktal-PrintCostEstimator folder )
 ## Running it and more
 * To run it on a local server (localhost:8000), navigate to the root folder where manage.py exists and run this command:
   ```
